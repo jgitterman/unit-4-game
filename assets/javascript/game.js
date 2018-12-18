@@ -15,13 +15,6 @@ var gemArray3 = Math.floor(Math.random() * 11 + 1);
 var gemArray4 = Math.floor(Math.random() * 11 + 1);
 var gameActive = false;
 
-// Create variables for DOM element to reference
-var $wins = document.getElementById("winsCount");
-var $losses = document.getElementById("lossesCount");
-var $gameBtn = document.getElementById("newGame");
-var $gemAmount = document.getElementById("gemAmount");
-var $amountGathered = document.getElementById("gemsGathered");
-
 // Create reset function
 function reset() {
   gemAmount = Math.floor(Math.random() * 101 + 19);;
@@ -50,7 +43,7 @@ $("#newGame").on("click", function() {
 // Add on click function for imgOne
 $("#imgOne").on("click", function () {
   if (gameActive !== true) {
-    return false
+    return false;
   }
   amountGathered = amountGathered + gemArray1;
   console.log("New amountGathered= " + amountGathered);
