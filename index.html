@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Crystal Collector Game</title>
+</head>
+
+<body>
+
+  <!-- Create heading -->
+  <div class="jumbotron jumbotron-fluid bg-light text-dark mb-3">
+    <div class="container-fluid text-center">
+      <h1 class="display-4">Welcome To The Crystal Collector Game!</h1>
+    </div>
+  </div>
+
+  <!-- Create container for crystals -->
+  <div class="container-fluid text-center">
+
+    <!-- Create row 1 -->
+    <div class="row mb-3">
+
+      <!-- Create col 1 -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <img class="img-fluid" src="https://www.fillmurray.com/300/300" alt="Fill Murray">
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+          <img class="img-fluid" src="https://www.fillmurray.com/300/300" alt="Fill Murray">
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+          <img class="img-fluid" src="https://www.fillmurray.com/300/300" alt="Fill Murray">
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+          <img class="img-fluid" src="https://www.fillmurray.com/300/300" alt="Fill Murray">
+      </div>
+    
+    <!-- End row 1 -->
+    </div>
+
+  <!-- End container -->
+  </div>
+
+  <!-- Create a container for "New Game" button -->
+  <div class="container-fluid">
+
+    <!-- Create row 1 -->
+    <div class="row mb-3">
+
+      <!-- Create col 1 -->
+      <div class="col-12">
+        <button class="btn btn-block btn-dark" id="new-game">Start a new game.</button>
+      </div>
+
+    <!-- End row 1 -->
+    </div>
+
+  <!-- End container -->
+  </div>
+
+  <!-- Create a container for a 2 col grid -->
+  <div class="container-fluid">
+
+    <!-- Create row 1 -->
+    <div class="row">
+
+      <!-- Create col 1 -->
+      <div class="col-12 col-md-6">
+        <div class="card">
+          <h4 class="card-header bg-light text-dark">Success Rate</h4>
+          <div class="card-body bg-light text-dark">
+            <!-- create spot to hold wins, losses, and new game button -->
+            <p>Wins: <span id="wins-count">0</span></p>
+            <p>Losses: <span id="losses-count">0</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Create col 2 -->
+      <div class="col-12 col-md-6">
+        <div class="card">
+          <h4 class="card-header bg-light text-dark">Game Info</h4>
+          <div class="card-body bg-light text-dark">
+            <!-- create spot to hold wins, losses, and new game button -->
+            <p>Amount To Collect: <span id="crystalCount">0</span></p>
+            <p>Crystals Collected: <span id="crystalsCollected">0</span></p>
+          </div>
+        </div>
+      </div>
+
+    <!-- End row 1 -->
+    </div>
+
+  <!-- End container -->
+  </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
